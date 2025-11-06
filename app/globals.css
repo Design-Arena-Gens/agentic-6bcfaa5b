@@ -1,0 +1,31 @@
+:root{ --bg:#0b1220; --panel:#121a2b; --muted:#8aa0c7; --text:#e5ecff; --primary:#6ea8fe; --primary-700:#4e89e5; --accent:#78f0c1; --danger:#ff7b7b; }
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.subtitle{color:var(--muted);margin:0}
+.card{background:var(--panel);border:1px solid #1c2540;border-radius:12px;padding:16px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.input,textarea,select{width:100%;background:#0c1527;color:var(--text);border:1px solid #1b2543;border-radius:10px;padding:10px 12px;font-size:14px}
+textarea{min-height:110px;resize:vertical}
+.label{display:block;margin-bottom:6px;color:#b6c6ea;font-weight:600}
+.help{color:var(--muted);font-size:12px;margin-top:6px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.button{background:var(--primary);border:none;color:#0b1220;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+.button.secondary{background:#1b2642;color:#cfe0ff}
+.button.ghost{background:transparent;border:1px solid #22335b;color:#cfe0ff}
+.button.danger{background:var(--danger);color:#0b1220}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#10203f;border:1px solid #213a71;color:#cfe0ff;border-radius:999px;padding:6px 10px;font-size:12px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:900px){.grid{grid-template-columns:1.2fr .8fr}}
+.section-title{margin:0 0 6px 0}
+.footer{margin-top:24px;color:var(--muted);font-size:12px}
+.progress{background:#0e1831;border:1px solid #1e2a4a;height:10px;border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--primary));width:0%}
+.preview{white-space:pre-wrap;background:#0c1527;border:1px dashed #2a3f71;border-radius:10px;padding:12px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;background:#0f1f3a;border:1px solid #233a6b;color:#cfe0ff;border-radius:999px;padding:6px 10px;font-size:12px}
+.chip button{background:transparent;border:none;color:#8fb0ff;cursor:pointer}
+.small{font-size:12px;color:#9db1d9}
+aside.panel{position:sticky;top:16px}
+hr.sep{border:0;height:1px;background:#1e2a44;margin:12px 0}
